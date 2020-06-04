@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+    <head>
+
+        <title>Speech To Text</title>
+        <link rel = "icon" href = "imic.jpg" type = "image/x-icon">
+
+        <link rel="stylesheet" href="styl.css">
+        <link rel="stylesheet" href="styles.css">
+        <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    
+    </head>
+    <body>
+
+        <div class="main">
+
+            <video class="vid_bg" poster="pos.jpg" autoplay muted loop>
+                <source src="s_to_t.mp4" type="video/mp4" />
+            </video>
+
+            
+
+            <div class="sub">
+
+                <div class="nav">
+                    <h1>SpeechToText</h1>
+                </div> 
+
+                <br /><br /><br /><br /><br /><br /><br />
+                <center>
+                    <div class="content">
+
+                        <div class="heads">
+                            <span class="head1"><h1>Hii, Welcome To SpeechToText.
+                            <br>No more need to type, let's speak only!!</h1></span>
+                        </div>
+                        
+                        <h3 class="no-browser-support">Sorry, Your Browser Doesn't Support the Web Speech API. Try Opening This In Google Chrome.</h3>
+                        <br />
+                        <br />
+
+                        <div class="bts">
+                            <button class="bt" id="start-record-btn">
+                                <i class="fas fa-microphone"></i>
+                            </button>
+                            <br />
+                            <br />
+                            <span class="tooltip">Click me to speak</span>
+                        </div>
+                        <br />
+                        
+
+                            <div class="input-single">
+                                <textarea id="note-textarea" placeholder="Use microphone to speak" rows="6"></textarea>
+                            </div>         
+                            <button class="bt1" id="pause-record-btn" title="Pause Voice Recording">Pause Recording</button>
+                            &nbsp;&nbsp;&nbsp;&nbsp;<button class="bt1"  title="Copy Text" onclick="copyText();">Copy Text</button>   
+                            <p id="recording-instructions"></p>
+                
+                        
+                        
+                    </div>
+                </center>
+
+            </div>
+        </div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="scriptt.js "></script>
+
+    </body>
+
+</html>

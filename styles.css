@@ -1,0 +1,12 @@
+p {
+    color: #444;
+}
+.no-browser-support {
+    display: none;
+    font-size: 1.2rem;
+    color: #e64427;
+    margin-top: 35px;
+}
+#recording-instructions {
+    margin: 15px auto 60px;
+}
